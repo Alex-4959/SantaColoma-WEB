@@ -1,162 +1,250 @@
-# Multimedia Web Project — Santa Coloma de Farners
+# Multimedia Web Project – Santa Coloma de Farners
 
-This project is a small multimedia tourism website about **Santa Coloma de Farners**, developed as the final assignment for the subject *Multimedia and User Interfaces*.
+This project is a multimedia tourism website about Santa Coloma de Farners, developed as the final assignment for the subject Multimedia and User Interfaces.
 
-The aim of the project is to design a functional, usable and visually attractive website that integrates different multimedia elements (video, images, audio) and includes interactive content related to real locations and activities from the town.
+The objective of the project has been to design and implement a functional and visually coherent website that integrates multimedia elements such as images, audio and video, together with an interactive activity planning section. The content of the website is based on real locations and tourism-related elements from the town in order to keep the project realistic and meaningful.
 
-The website has been implemented using **React + Vite** and deployed through **GitHub Pages**.
+The site has been created using React and Vite, and deployed using GitHub Pages.
 
 
 
----
+## 1. Page structure (wireframe description)
 
-## 1️⃣ Page structure (wireframe description)
+The website follows a single-page layout with structured sections that are organised in a clear and logical way. The aim has been to design a simple and intuitive navigation structure, similar to a small promotional tourism website.
 
-The structure of the page follows a single-page layout divided into well-defined sections. The design is focused on being clear, intuitive and easy to navigate:
+The sections of the page are the following:
 
-### ✔ Navigation bar (header)
-Fixed navbar with links to scroll to each section of the page.
+1. Navigation bar
 
-### ✔ Hero section (intro with background video)
-Welcome section with:
-- title and short introduction text
-- background video representing the town
-- call-to-action button
+The page includes a fixed navigation bar at the top of the site. The navigation menu allows the user to move between sections through internal anchor links. The fixed position of the navbar makes access to the navigation elements available at all times during scrolling.
 
-This works as the visual presentation of the website.
+2. Hero section
 
-### ✔ Highlights section
-Three small cards explaining the key identity of the town:
+This is the main introductory section of the website and it appears at the top of the page. It includes:
+
+- a main title introducing the destination
+- a short descriptive text
+- a call to action button
+- a background video related to Santa Coloma de Farners
+
+The objective of this section is to create an attractive initial visual impact and present the town in a multimedia way.
+
+3. Highlights section
+
+This section presents three thematic blocks that summarise the main identity aspects of the town, such as:
+
 - nature and landscape
 - well-being and thermal tourism
-- local products and tradition
+- local culture and traditions
 
-### ✔ Attractions section
-Cards with **real locations** including:
-- image
-- category badge
-- short descriptive text
+Each block is displayed using card-style containers that help organise information in a clear and visually structured manner.
 
-Places include examples such as the castle, Sant Salvador park or the historic centre.
+4. Attractions section
 
-### ✔ Activities planner (interactive)
-Section where users can:
-- add activities to their visit plan
-- remove them
-- see total estimated duration
+This section contains a set of cards representing real attractions and places of interest from Santa Coloma de Farners.
 
-Each card includes duration, difficulty and suitability.
+Each attraction card contains:
 
-### ✔ Audio section
-A short audio description about the place.
+- an image
+- a title
+- a category label
+- a short descriptive text
 
-### ✔ Image gallery
-Gallery with real photographs of the town.
-One of the images has been **edited** (crop + light and colour adjustment).
+This section aims to show representative locations of the area in a concise and accessible way.
 
-### ✔ Information & contact
-Useful information and a clickable contact email.
+5. Activities planner (interactive section)
 
-### ✔ Footer
-Closing message and end of page.
+This section is designed as an interactive element of the website, where the user can simulate the planning of a visit by adding and removing activities.
 
-The structure is designed to simulate a real small tourism promotion website.
+Each activity card contains:
 
-
-
----
-
-## 2️⃣ Implemented features and multimedia elements
-
-The project integrates several multimedia and interactive components required in the assignment:
-
-### 🎥 Background video (hero section)
-A promotional background video is used in the hero section to create an immersive introduction.  
-Due to repository limitations, the file was optimised and compressed before including it in the project.
-
-### 🖼 Real images from the town
-Images are used in:
-- attractions section
-- activities
-- gallery
-
-They correspond to real locations from Santa Coloma de Farners.
-
-One gallery image has been **visually edited** to improve composition and highlight natural green tones (basic crop, contrast and brightness adjustments).
-
-### 🎧 Audio playback element
-The page includes an HTML5 audio player with a descriptive audio track.
-
-### 🧩 Interactive activity planner
-Users can:
-- add activities to a personal trip plan  
-- remove them again  
-- see total visit duration
-
-Cards include:
-- duration (hours)
-- difficulty level
-- recommended profile
+- name of the activity
 - type of activity
+- estimated duration in hours
+- difficulty level
+- recommended audience
+- area or environment of the activity
+- descriptive text
 
-### 📱 Responsive design
-The layout adapts to desktop and mobile screens using CSS grid and responsive rules.
+The user can add activities to a personal plan and the system updates the total estimated duration. This simulates a basic planning tool for a visit to the town.
 
-### 🎨 Visual design & style
-The colour palette is inspired by the identity of the area:
+6. Audio section
 
-- green tones → forest and natural landscape  
-- blue-green tones → river and environment  
-- orange tones → local gastronomy and tradition  
+The website includes a section with an audio player, where the user can listen to a short descriptive audio related to the town.
 
-The goal was to create a natural, calm and welcoming visual aesthetic.
+The audio element has been added through a standard HTML5 audio tag, ensuring compatibility and ease of use.
 
+7. Image gallery
 
+This section contains a gallery of real photographs from Santa Coloma de Farners.
 
----
+The images are displayed in a grid layout. One of the images has been edited as part of the practical requirements of the assignment. The edition consisted of basic adjustments such as cropping and light and colour enhancement, with the aim of improving visual composition and highlighting natural tones.
 
-## 3️⃣ Development process (summary)
+8. Information and contact section
 
-The development process followed these phases:
+This block includes practical information for the user and a contact email address, which is implemented as a clickable mailto link.
 
-1. **Initial planning**
-   Review of assignment requirements and definition of the website sections.
+9. Footer
 
-2. **Wireframe and content structure**
-   Organisation of the layout and page sections before implementation.
+The website ends with a footer that closes the page and provides a final reference zone for the user.
 
-3. **Component-based implementation in React**
-   Each section was implemented as a separate component:
-   Hero, Highlights, Attractions, Activities, Audio, Gallery, Info…
-
-4. **Styling and UI refinement**
-   Iterative improvement of:
-   spacing, typography, colours, alignment and card visuals.
-
-5. **Multimedia integration**
-   Addition of:
-   - images
-   - video background
-   - audio element
-   - image editing and optimisation
-
-6. **Activity planner logic**
-   Implementation of activity selection and state handling.
-
-7. **Deployment**
-   Build generated with Vite and published via `docs/` using GitHub Pages, including base path configuration.
-
-Throughout the process I made several revisions to improve both visual quality and user experience, ensuring that the website looks coherent, clean and functional.
+The overall structure of the site has been designed to be coherent, consistent and easy to understand, maintaining a clear hierarchy of content throughout the page.
 
 
 
----
+## 2. Implemented features and multimedia elements
 
-## 4️⃣ Instructions to run the website locally
+The project incorporates different multimedia components and interactive features, which were required in the assignment guidelines. The implemented elements are described below.
 
-To run the project locally:
+1. Background video in the hero section
+
+The hero section includes a background video that appears behind the main text. This video is related to the town and contributes to creating a more immersive and attractive introduction to the website.
+
+Initially, a local video file was used. Later, due to file size constraints in the repository, the video was optimised and compressed so that it could be included while maintaining acceptable quality and performance.
+
+2. Use of real images
+
+Images are used across different sections of the website:
+
+- attractions section
+- activities section
+- image gallery
+
+All images correspond to real locations from Santa Coloma de Farners, which gives coherence and realism to the project.
+
+One of the images in the gallery has been edited as part of the assignment requirement to include an edited multimedia element. The edition process consisted of basic visual adjustments such as cropping, light correction and tonal contrast improvement.
+
+3. Audio playback element
+
+The website includes an audio player that allows the user to listen to a short descriptive recording.
+
+The integration has been implemented using a standard audio control element, which allows playback, pause and timeline navigation in a simple and accessible way.
+
+4. Interactive activity planner
+
+The activities planner is the main interactive component of the project.
+
+The user can:
+
+- add activities to a visit plan
+- remove activities from the plan
+- view the total estimated duration of selected activities
+
+The functionality has been implemented using React state handling, which dynamically updates the list of selected activities.
+
+5. Responsive design
+
+The website includes responsive layout adaptations so that it can be viewed correctly on both desktop and mobile devices.
+
+CSS grid and responsive breakpoints have been applied to adjust alignment, spacing and card layout depending on screen width.
+
+6. Visual and aesthetic design
+
+The visual style of the website has been designed using a colour palette inspired by the natural environment of the area.
+
+The chromatic range is based mainly on:
+
+- green tones, associated with forest and natural landscape
+- blue-green tones, related to the river and natural areas
+- orange tones, referring to local products and cultural identity
+
+The objective has been to create a calm, natural and visually consistent aesthetic.
+
+
+
+## 3. Development process
+
+The development of the website has followed a progressive and iterative process, structured in different phases.
+
+1. Initial planning
+
+First, the assignment requirements were analysed to understand:
+
+- the structure of the website
+- the type of content required
+- the multimedia components to be included
+
+Based on this review, the main sections of the website and their purpose were defined.
+
+2. Content structure and wireframe approach
+
+Before implementation, the logical structure of the page was organised and the internal order of sections was determined. A conceptual wireframe was defined mentally and through organisation of components, prioritising clarity and coherence.
+
+The structure was designed as a vertical one-page layout, with blocks that group related content.
+
+3. Implementation in React using components
+
+The website has been implemented using React with Vite.
+
+Each major section of the site has been developed as an independent component, including:
+
+- Hero
+- Highlights
+- Attractions
+- Activities
+- Gallery
+- Audio
+- Information
+
+This component-based structure has allowed the code to remain modular and easier to maintain.
+
+4. Styling and user interface refinement
+
+Once the basic functionality was implemented, several iterations were carried out on the visual design.
+
+This process included:
+
+- improvement of spacing and margins
+- alignment adjustments
+- refinement of typography
+- enhancement of card aesthetics
+- incorporation of subtle hover animations
+
+The aim was to improve usability and achieve a more polished and visually coherent final result.
+
+5. Integration of multimedia elements
+
+During this phase, the different multimedia elements were added and configured:
+
+- images in cards and gallery
+- background video in the hero section
+- audio player
+- edited gallery image
+
+Special attention was paid to file weight and optimisation, especially for deployment compatibility.
+
+6. Implementation of activity planner logic
+
+The logic of the activities planner was implemented using React state management to allow:
+
+- selection and deselection of activities
+- update of the selected list
+- calculation of estimated total duration
+
+This part of the project helped turn the website into something more than a static page.
+
+7. Deployment process
+
+The project was deployed using GitHub Pages.
+
+Steps included:
+
+- generating the production build with Vite
+- placing the build output inside the docs folder
+- configuring the base path for GitHub Pages
+- publishing and testing the public version
+
+During deployment, some adjustments had to be made related to path configuration to avoid blank page issues.
+
+Throughout the entire development process, both the visual design and the structure of the content were progressively reviewed and improved in order to achieve a final version that was coherent, functional and visually consistent.
+
+
+
+## 4. Instructions to run the website locally
+
+The following steps explain how to download and run the project locally.
 
 1. Clone the repository
 
-```bash
-git clone https://github.com/alex-4959/SantaColoma-WEB
+Run the following command:
+
