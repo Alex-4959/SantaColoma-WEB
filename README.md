@@ -246,5 +246,53 @@ The following steps explain how to download and run the project locally.
 
 1. Clone the repository
 
-Run the following command:
+Run the following command: git clone https://github.com/alex-4959/SantaColoma-WEB
+
+2. Enter the project folder
+    Command: cd SantaColoma-WEB
+
+3. Install dependencies
+Command: npm install
+
+4. Start the development server
+Command: npm run dev
+
+Once executed, the website can be accessed locally through:
+
+http://localhost:5173
+
+
+
+## 5. Deployment information
+
+The project has been deployed using GitHub Pages.
+
+The build generated with Vite has been placed inside the docs folder of the repository, which is configured as the publication source.
+
+The public version of the website can be accessed through the following link:
+
+https://alex-4959.github.io/SantaColoma-WEB/
+
+
+
+## 6. Source code availability
+
+The complete source code of the project, including components, styles, multimedia assets and configuration files, is available in this same repository under the name:
+
+SantaColoma-WEB
+
+This repository contains both the development version and the deployment build used for the public version of the website.
+
+
+## 7. Conclusion
+
+The development of this project has allowed me to work with the design and implementation of a multimedia website in a practical and structured way. Throughout the process I have applied concepts related to user interface design, multimedia integration, content organisation and interactive behaviour using React components.
+
+The project has also helped me to better understand the importance of planning the structure of a website before implementation, as well as the need to progressively refine visual and usability aspects during development. The integration of images, audio and video elements, together with the creation of the interactive activities planner, has contributed to turning the site into a more complete and meaningful product.
+
+Finally, the deployment process using GitHub Pages has provided me with experience in preparing a production build, managing assets and solving configuration issues related to paths and hosting. Overall, the project has been useful both from a technical perspective and as an opportunity to apply theoretical concepts in a practical and realistic context.
+
+
+
+
 
